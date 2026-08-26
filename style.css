@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #6d6c6c 0%, #414040 60%, #000000 100%);
+    background-attachment: fixed;
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fdfdff;
+}
+
+header {
+    color: #fffbfb;
+    text-align: center;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto 25px;
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid #ffffff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+    margin: 0;
+    font-size: clamp(1.5rem, 4vw, 2.4rem);
+}
+
+main {
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.title {
+    width: 100%;
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 15px;
+    border: 2px solid #ffffff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.title h2 {
+    margin: 8px 0;
+}
+
+.esportes {
+    width: 100%;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid #ffffff;
+    box-shadow: 0 8px 20px rgba(15, 15, 15, 0.5);
+    background: rgba(0, 0, 0, 0.18);
+}
+
+.esportes h2 {
+    margin-top: 0;
+}
+
+.esportes p {
+    line-height: 1.7;
+    text-align: justify;
+}
+
+main img {
+    display: block;
+    width: 100%;
+    max-width: 797px;
+    height: auto;
+    margin: 25px auto;
+    border: 5px solid #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.65);
+    object-fit: cover;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 35px;
+    padding: 20px;
+    border: 2px solid #ffffff;
+    border-radius: 15px;
+    color: #fdfdff;
+    font-size: 0.9rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+button {
+    margin: 6px;
+    padding: 10px 16px;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    background: #222222;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.2s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    background: #444444;
+}
+
+button span {
+    margin-left: 5px;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .esportes {
+        padding: 15px;
+    }
+
+    .esportes p {
+        text-align: left;
+    }
+
+    main img {
+        border-width: 3px;
+        border-radius: 12px;
+    }
+
+    button {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
